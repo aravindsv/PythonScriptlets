@@ -1,0 +1,7 @@
+import urllib
+from lxml import html
+
+url = https://ccle.ucla.edu/pluginfile.php/750795/mod_resource/content/0/Midterm1_scores.pdf
+page = html.fromstring(urllib.urlopen(url).read())
+
+print page
